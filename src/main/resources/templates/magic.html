@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Stellar by HTML5 UP</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/static/assets/css/main.css" th:href="@{/assets/css/main.css}" />
+    <noscript><link rel="stylesheet" href="/static/assets/css/noscript.css" th:href="@{/assets/css/noscript.css}"/></noscript>
+</head>
+<body class="is-preload">
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <!-- Header -->
+    <header id="header" class="alt">
+        <span class="logo"><img th:src="@{/images/love1.png}" alt="" style="width: 30%" /></span>
+        <h1>Bạch Thị Ngọc Nhi</h1>
+        <p>Welcome, This is a website about my love, Bé Mỳ<br /></p>
+    </header>
+
+    <!-- Nav -->
+    <nav id="nav">
+        <ul>
+            <li><a href="#intro" class="active">Giới Thiệu</a></li>
+            <li><a href="#first">Làm ảo thuật nè </a></li>
+<!--            <li><a href="#second">Second Section</a></li>-->
+<!--            <li><a href="#cta">Get Started</a></li>-->
+        </ul>
+    </nav>
+
+    <!-- Main -->
+    <div id="main" style="background-color: black">
+
+        <!-- Introduction -->
+
+        <!-- First Section -->
+        <section id="first" class="main special">
+            <header class="major">
+                <h2>Làm Ảo Thuật Chỗ Này</h2>
+            </header>
+            <div th:each="li :${list}" class="major">
+                <pre th:text="${li}" style="font-size: 0.25em; line-height: 0px" class="nhi">abc</pre>
+            </div>
+<!--            <input type="file" name="inputfile" th:value="${file}"-->
+<!--                   id="inputfile">-->
+<!--            <br>-->
+
+<!--            <pre id="output" style="font-size: 50%"></pre>-->
+
+
+
+
+            <footer class="major">
+                <ul class="actions special">
+                    <li><a th:href="@{/}" class="button">Back</a></li>
+                </ul>
+            </footer>
+        </section>
+
+
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <section>
+            <h2>Đây là Website được làm riêng cho bé Mỳ </h2>
+            <p> Đây là website được anh người yêu đẹp trai siêu cấp vũ trụ làm riêng cho bé Mỳ</p>
+            <p> THƯƠNG BÉ SUỐT ĐỜI, MOAHHHH</p>
+            <!--            <ul class="actions">-->
+            <!--                <li><a href="generic.html" class="button">Learn More</a></li>-->
+            <!--            </ul>-->
+        </section>
+        <section>
+            <h2>Bạch Thị Ngọc Nhi</h2>
+            <dl class="alt">
+                <dt>Tình Trạng: </dt>
+                <dd>Người Yêu Anh Kiệt</dd>
+                <dt>Phone: </dt>
+                <dd>0901067804</dd>
+                <dt>Email</dt>
+                <dd><a href="#">1401bachnhi@gmail.com</a></dd>
+            </dl>
+            <ul class="icons">
+                <li><a href="https://www.facebook.com/khanhbang.bach.5/" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
+                <!--                <li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>-->
+                <!--                <li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>-->
+            </ul>
+        </section>
+        <p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">KietDT</a>.</p>
+    </footer>
+
+</div>
+
+<!-- Scripts -->
+<script th:src="@{/assets/js/jquery.min.js}" src="/static/assets/js/jquery.min.js"></script>
+<script th:src="@{/assets/js/jquery.scrollex.min.js}" src="/static/assets/js/jquery.scrollex.min.js"></script>
+<script th:src="@{/assets/js/jquery.scrolly.min.js}" src="/static/assets/js/jquery.scrolly.min.js"></script>
+<script th:src="@{/assets/js/browser.min.js}" src="/static/assets/js/browser.min.js"></script>
+<script th:src="@{/assets/js/breakpoints.min.js}" src="/static/assets/js/breakpoints.min.js"></script>
+<script th:src="@{/assets/js/util.js}" src="/static/assets/js/util.js"></script>
+<script th:src="@{/assets/js/main.js}" src="/static/assets/js/main.js"></script>
+<!--<script type="text/javascript">-->
+<!--    document.getElementById('inputfile')-->
+<!--        .addEventListener('change', function() {-->
+
+<!--            var fr=new FileReader();-->
+<!--            fr.onload=function(){-->
+<!--                document.getElementById('output')-->
+<!--                    .textContent=fr.result;-->
+<!--            }-->
+
+<!--            fr.readAsText(this.files[0]);-->
+<!--        })-->
+<!--</script>-->
+
+</body>
+</html>
